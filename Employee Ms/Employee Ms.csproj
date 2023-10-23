@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F000FF5D-D0C0-4B92-A8DA-B1F21D9B8D2C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Employee_Ms</RootNamespace>
+    <AssemblyName>Employee Ms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salaray.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salaray.Designer.cs">
+      <DependentUpon>Salaray.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View.Designer.cs">
+      <DependentUpon>View.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Salaray.resx">
+      <DependentUpon>Salaray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View.resx">
+      <DependentUpon>View.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images me.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images me1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images me2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images me3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-482838344-1024x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %289%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaperflare.com_wallpaper %2817%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illustration-city-anime-painting-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pattern-digital-art-triangle-wallpaper-thumb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simple-background-texture-pattern-wallpaper-thumb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digital-art-blue-leaves-pattern-wallpaper-thumb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digital-art-artwork-abstract-red-wallpaper-thumb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digital-art-blue-leaves-pattern-wallpaper-thumb1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digital-art-blue-leaves-pattern-wallpaper-thumb2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digital-art-blue-leaves-pattern-wallpaper-thumb3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digital-art-artwork-abstract-red-wallpaper-thumb1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digital-art-artwork-abstract-red-wallpaper-thumb2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digital-art-blue-leaves-pattern-wallpaper-thumb4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\artwork-pattern-texture-dark-wallpaper-thumb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\artwork-pattern-texture-dark-wallpaper-thumb1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pattern-digital-art-triangle-wallpaper-thumb1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%293.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jeans-texture-seam-abstract-wallpaper-thumb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digital-art-blue-leaves-pattern-wallpaper-thumb5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simple-background-texture-pattern-wallpaper-thumb1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digital-art-blue-leaves-pattern-wallpaper-thumb6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %287%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\artwork-pattern-texture-wallpaper-thumb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\artwork-pattern-texture-dark-wallpaper-thumb2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\artwork-pattern-texture-dark-wallpaper-thumb3.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
